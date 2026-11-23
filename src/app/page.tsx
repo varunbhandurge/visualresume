@@ -1,22 +1,22 @@
 import React from 'react';
-import { Navbar } from '@/components/Navbar';
-import { Hero } from '@/components/Hero';
-import { CoreCapabilities } from '@/components/CoreCapabilities';
-import { PrototypesShowcase } from '@/components/PrototypesShowcase';
-import { FastStatsBanner } from '@/components/FastStatsBanner';
-import { SaaSFooter } from '@/components/SaaSFooter';
+import { TerminalNavbar } from '@/components/TerminalNavbar';
+import { AntiHero } from '@/components/AntiHero';
+import { ImpactGrid } from '@/components/ImpactGrid';
+import { ProofOfWorkBento } from '@/components/ProofOfWorkBento';
+import { ExecutionTrifecta } from '@/components/ExecutionTrifecta';
+import { ExecutiveClose } from '@/components/ExecutiveClose';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col bg-obsidian text-neutral-100">
-      <Navbar />
+    <div className="min-h-screen flex flex-col bg-black text-neutral-100 selection:bg-terminal selection:text-black">
+      <TerminalNavbar />
       <main className="flex-1">
-        <Hero />
-        <CoreCapabilities />
-        <PrototypesShowcase />
-        <FastStatsBanner />
+        <AntiHero />
+        <ImpactGrid />
+        <ProofOfWorkBento />
+        <ExecutionTrifecta />
       </main>
-      <SaaSFooter />
+      <ExecutiveClose />
     </div>
   );
 }
