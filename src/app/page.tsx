@@ -1,45 +1,34 @@
-'use client';
-
-import React, { useState } from 'react';
-import { LinearNavbar } from '@/components/LinearNavbar';
-import { DynamicHeroShowcase } from '@/components/DynamicHeroShowcase';
-import { InteractiveBFSIStrip } from '@/components/InteractiveBFSIStrip';
-import { ConnectedEngineSequence } from '@/components/ConnectedEngineSequence';
-import { BentoSystemsShowcase } from '@/components/BentoSystemsShowcase';
-import { LinearFooter } from '@/components/LinearFooter';
-import { SlideOverDossier } from '@/components/SlideOverDossier';
+import React from 'react';
+import { SimpleHeader } from '@/components/SimpleHeader';
+import { SimpleHero } from '@/components/SimpleHero';
+import { ThingsIDo } from '@/components/ThingsIDo';
+import { ThingsImWorkingOn } from '@/components/ThingsImWorkingOn';
+import { ClientsWorkedWith } from '@/components/ClientsWorkedWith';
+import { SimpleFooter } from '@/components/SimpleFooter';
 
 export default function HomePage() {
-  const [dossierOpen, setDossierOpen] = useState(false);
-
   return (
-    <div className="ambient-scene-glow min-h-screen flex flex-col text-white selection:bg-cyan-500/30 selection:text-white">
-      {/* Slide-Over Recruiter Dossier */}
-      <SlideOverDossier
-        isOpen={dossierOpen}
-        onClose={() => setDossierOpen(false)}
-      />
-
-      {/* Floating Linear Header */}
-      <LinearNavbar onOpenDossier={() => setDossierOpen(true)} />
+    <div className="min-h-screen flex flex-col bg-[#0A0B0E] text-[#F8FAFC] selection:bg-cyan-500/30 selection:text-white">
+      {/* Top Header */}
+      <SimpleHeader />
 
       {/* Main Content Stream */}
       <main className="flex-1">
-        {/* Dynamic Hero Showcase with Live Telemetry & Prototype Sandbox Deck */}
-        <DynamicHeroShowcase />
+        {/* Hero: Customer Needs from Business & Tech POV */}
+        <SimpleHero />
 
-        {/* Interactive Institutional BFSI Delivery Ledger */}
-        <InteractiveBFSIStrip />
+        {/* Section 1: Things I Do */}
+        <ThingsIDo />
 
-        {/* 4-Stage Chronological Delivery Engine */}
-        <ConnectedEngineSequence />
+        {/* Section 2: Things I'm Working On (with Vercel and Git links) */}
+        <ThingsImWorkingOn />
 
-        {/* Live Systems & GitHub Bento Showcase */}
-        <BentoSystemsShowcase />
+        {/* Section 3: Clients I Have Worked With */}
+        <ClientsWorkedWith />
       </main>
 
-      {/* Modern Linear Footer */}
-      <LinearFooter onOpenDossier={() => setDossierOpen(true)} />
+      {/* Footer: Contact & Traditional Resume */}
+      <SimpleFooter />
     </div>
   );
 }
