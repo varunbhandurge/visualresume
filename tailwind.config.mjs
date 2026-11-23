@@ -9,30 +9,32 @@ const config = {
   theme: {
     extend: {
       colors: {
-        black: '#000000',
-        terminal: {
-          DEFAULT: '#00FF00',
-          dim: '#00BB00',
-          glow: 'rgba(0, 255, 0, 0.25)',
+        obsidian: {
+          DEFAULT: '#07080A',
+          subtle: '#0B0C10',
+          surface: '#0F1015',
         },
-        electric: {
-          DEFAULT: '#0070F3',
-          glow: 'rgba(0, 112, 243, 0.25)',
+        champagne: {
+          DEFAULT: '#F59E0B',
+          light: '#FBBF24',
+          dim: '#D97706',
         },
-        surface: {
-          DEFAULT: '#080808',
-          elevated: '#0D0D0D',
-          border: '#1F1F1F',
-          borderHover: '#333333',
+        executive: {
+          indigo: '#6366F1',
+          indigoLight: '#818CF8',
+          text: '#F4F4F5',
+          muted: '#A1A1AA',
+          subtle: '#71717A',
         },
       },
       fontFamily: {
-        sans: ['var(--font-jakarta)', 'Inter', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-jetbrains)', 'GeistMono', 'monospace'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'GeistMono', 'monospace'],
       },
       boxShadow: {
-        'terminal-glow': '0 0 20px -3px rgba(0, 255, 0, 0.3)',
-        'electric-glow': '0 0 20px -3px rgba(0, 112, 243, 0.3)',
+        'executive-card': '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
+        'spotlight': '0 0 80px 20px rgba(99, 102, 241, 0.08)',
+        'gold-glow': '0 0 30px -5px rgba(245, 158, 11, 0.2)',
       },
     },
   },

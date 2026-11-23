@@ -1,41 +1,26 @@
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700', '800'],
-  variable: '--font-jakarta',
-  display: 'swap',
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '700', '800'],
-  variable: '--font-jetbrains',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
-  title: 'Varun Bhandurge — Proof of Work | Executive Briefing',
+  title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
   description:
-    'Stop losing months to misaligned requirements. I map the business problem, negotiate the SLAs, and ship the AI prototype in days. Varun Bhandurge: Key Account Manager • Lead BA • AI Builder.',
+    'From deal closure and AI prototyping to full-SDLC enterprise delivery. Varun Bhandurge: Key Account Manager, Lead Business Analyst, and Certified Scrum Master (CSM®).',
   authors: [{ name: 'Varun Bhandurge', url: 'https://github.com/varunbhandurge' }],
   creator: 'Varun Bhandurge',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://github.com/varunbhandurge/visualresume',
-    title: 'Varun Bhandurge — Proof of Work',
+    title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
     description:
-      'Stop losing months to misaligned requirements. I map the business problem, negotiate the SLAs, and ship the AI prototype in days.',
-    siteName: 'Varun Bhandurge Proof of Work',
+      'From deal closure and AI prototyping to full-SDLC enterprise delivery. Proven delivery across ICICI Bank, HDFC ERGO, ABSLI, and Reliance ADAG.',
+    siteName: 'Varun Bhandurge Executive Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Varun Bhandurge — Proof of Work',
+    title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
     description:
-      'Stop losing months to misaligned requirements. I map the business problem, negotiate the SLAs, and ship the AI prototype in days.',
+      'From deal closure and AI prototyping to full-SDLC enterprise delivery.',
   },
   robots: {
     index: true,
@@ -44,7 +29,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#000000',
+  themeColor: '#07080A',
   width: 'device-width',
   initialScale: 1,
 };
@@ -55,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${jetbrains.variable} dark`}>
-      <body className="bg-black text-neutral-100 min-h-screen">
+    <html lang="en" className="dark font-sans">
+      <body className="bg-[#07080A] text-[#F4F4F5] min-h-screen">
         {children}
       </body>
     </html>
