@@ -1,12 +1,11 @@
 import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { MetricsBar } from '@/components/MetricsBar';
-import { CapabilityTabs } from '@/components/CapabilityTabs';
-import { ClientGrid } from '@/components/ClientGrid';
-import { ProjectsGrid } from '@/components/ProjectsGrid';
-import { LifecycleStepper } from '@/components/LifecycleStepper';
-import { Footer } from '@/components/Footer';
+import { SecretSauceGrid } from '@/components/SecretSauceGrid';
+import { PrototypesShowcase } from '@/components/PrototypesShowcase';
+import { FastStatsBanner } from '@/components/FastStatsBanner';
+import { DigDeeperSection } from '@/components/DigDeeperSection';
+import { SaaSFooter } from '@/components/SaaSFooter';
 
 export default function HomePage() {
   return (
@@ -14,13 +13,12 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <MetricsBar />
-        <CapabilityTabs />
-        <ClientGrid />
-        <ProjectsGrid />
-        <LifecycleStepper />
+        <SecretSauceGrid />
+        <PrototypesShowcase />
+        <FastStatsBanner />
+        <DigDeeperSection />
       </main>
-      <Footer />
+      <SaaSFooter />
     </div>
   );
 }

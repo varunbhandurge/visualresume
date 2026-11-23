@@ -18,23 +18,22 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Varun Bhandurge | Key Account Manager & Lead Business Analyst',
+  title: 'Varun Bhandurge | Key Account Manager, Lead BA & AI Prototype Builder',
   description:
-    'Executive visual resume and portfolio of Varun Bhandurge. Key Account Manager, Lead Business Analyst, and Certified Scrum Master (CSM®) specializing in BFSI customer onboarding, automated KYC & OCR, AI prototyping, and enterprise SDLC delivery.',
+    "I uncover what your business needs but can't articulate—and I ship the AI prototypes to prove it. Varun Bhandurge: Key Account Manager, Lead BA, and Builder bridging stakeholder ambiguity and deployed technical reality.",
   keywords: [
     'Varun Bhandurge',
     'Key Account Manager',
     'Lead Business Analyst',
+    'AI Prototypes Builder',
     'Certified Scrum Master',
     'CSM',
-    'BFSI Digital Onboarding',
-    'KYC Automation',
-    'Document AI',
     'FastAPI',
     'Next.js',
-    'Agile SDLC',
-    'Cybersecurity Sales',
-    'GRC',
+    'BFSI Digital Onboarding',
+    'Automated KYC',
+    'Google Document AI',
+    'Multi-Agent AI Swarms',
   ],
   authors: [{ name: 'Varun Bhandurge', url: 'https://github.com/varunbhandurge' }],
   creator: 'Varun Bhandurge',
@@ -42,16 +41,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://github.com/varunbhandurge/visualresume',
-    title: 'Varun Bhandurge | Key Account Manager & Lead Business Analyst',
+    title: 'Varun Bhandurge | Key Account Manager, Lead BA & AI Prototype Builder',
     description:
-      'Bridging enterprise business vision and technical execution—from discovery, AI prototyping, and SLA negotiations to full-SDLC delivery.',
-    siteName: 'Varun Bhandurge Visual Resume',
+      "I uncover what your business needs but can't articulate—and I ship the AI prototypes to prove it.",
+    siteName: 'Varun Bhandurge Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Varun Bhandurge | Key Account Manager & Lead Business Analyst',
+    title: 'Varun Bhandurge | Key Account Manager, Lead BA & AI Prototype Builder',
     description:
-      'Bridging enterprise business vision and technical execution across BFSI onboarding, AI swarms, and full-SDLC delivery.',
+      "I uncover what your business needs but can't articulate—and I ship the AI prototypes to prove it.",
   },
   robots: {
     index: true,

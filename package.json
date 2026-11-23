@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "framer-motion": "^14.14.0",
     "lucide-react": "^0.468.0",
     "next": "14.2.24",
     "react": "^18.3.1",
@@ -27,7 +28,7 @@
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3"
   },
-  "description": "",
+  "description": "[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/varunbhandurge/visualresume) ![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css) ![Certified Scrum Master](https://img.shields.io/badge/Certified-Scrum%20Master%20(CSM%C2%AE)-10B981)",
   "main": "index.js",
   "repository": {
     "type": "git",

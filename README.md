@@ -1,109 +1,105 @@
-# Varun Bhandurge — Interactive Visual Resume & Executive Portfolio
+# Varun Bhandurge — Executive & Builder SaaS Landing Page
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/varunbhandurge/visualresume)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11.11-FF0055?logo=framer)
 ![Certified Scrum Master](https://img.shields.io/badge/Certified-Scrum%20Master%20(CSM%C2%AE)-10B981)
 
-> **Key Account Manager | Lead Business Analyst | Project Manager (CSM®)**  
-> Bridging enterprise business vision and technical execution—from discovery, AI prototyping, and SLA negotiations to full-SDLC delivery, cybersecurity sales, and contract renewals.
+> **"I uncover what your business needs but can't articulate—and I ship the AI prototypes to prove it."**  
+> Varun Bhandurge. Key Account Manager, Lead BA, and Builder. I bridge the gap between ambiguous stakeholder demands and deployed technical reality.
 
 ---
 
-## 🏛️ Executive Profile
+## ⚡ Architecture & Design Philosophy (Zero Corporate Filler)
 
-- **Flagship Commercial Impact:** Drove **₹10 Cr+ in enterprise revenue** by delivering **9 mission-critical projects within 10 months** for a Tier-1 private sector bank (accounting for 55% of total corporate top-line).
-- **Domain Specialization:** Deep expertise in **BFSI Customer Onboarding, Digital KYC, and Intelligent OCR** (Google Document AI / Cloud Vision) achieving **95%+ automated extraction accuracy** (<0.1% false positives, <4% false negatives).
-- **Enterprise Client Pedigree:** Proven client stewardship, pre-sales deal defense, and SLA governance across **ICICI Bank, HDFC ERGO, ICICI Prudential, Aditya Birla Sun Life Insurance (ABSLI), and Reliance ADAG**.
-- **Full-Lifecycle Ownership:** Certified Scrum Master (CSM®) driving end-to-end accountability from client discovery, BRD/PRD authoring, and rapid AI prototyping to cross-functional sprint governance and post-launch renewals.
+Engineered strictly as a **high-converting SaaS developer/executive landing page** rather than a traditional wall-of-text web resume:
 
----
-
-## ⚡ Interactive Application Architecture
-
-This application is built with a minimal-dependency, high-performance architecture engineered for sub-second page loads and zero-friction deployment on **Vercel**:
+- **Aesthetic:** Obsidian Dark Mode (`#09090B`), subtle slate cards (`#18181B`), crisp typography (`#FAFAFA`), and high-trust accents in **Emerald** (`#10B981`) and **Electric Blue** (`#3B82F6`).
+- **Typography:** Google Fonts `Plus Jakarta Sans` (display/body) & `JetBrains Mono` (metrics/tags).
+- **Subtle Motion:** Smooth reveals and expandable height animations powered by `framer-motion`.
 
 ```
 src/
 ├── app/
-│   ├── globals.css         # Custom obsidian styling, sleek scrollbars, and glow tokens
-│   ├── layout.tsx          # Font optimization (Plus Jakarta Sans & JetBrains Mono), SEO metadata
-│   └── page.tsx            # Single-page executive layout coordinating all modules
+│   ├── globals.css              # Obsidian styling, glow tokens, custom scrollbars
+│   ├── layout.tsx               # Next.js Font optimization, SEO & OpenGraph tags
+│   └── page.tsx                 # SaaS landing page layout
 ├── components/
-│   ├── Navbar.tsx          # Sticky glassmorphic header, live availability pill, quick CTAs
-│   ├── Hero.tsx            # Headline, executive positioning, resume PDF download & GitHub CTAs
-│   ├── MetricsBar.tsx      # 4-column KPI strip (₹10 Cr+ revenue, 95%+ KYC accuracy, Tier-1 trust)
-│   ├── CapabilityTabs.tsx  # 360° Capability Matrix tabbed view across 3 strategic pillars
-│   ├── ClientGrid.tsx      # BFSI enterprise client wordmarks & domain deep-dives
-│   ├── ProjectsGrid.tsx    # Category-filtered showcase of 7 engineering & AI projects
-│   ├── ProjectModal.tsx    # Architectural deep-dive modal dialog with system specs
-│   ├── LifecycleStepper.tsx# Interactive 6-stage SDLC & account delivery pipeline
-│   ├── Toast.tsx           # Auto-dismissing high-trust notification banner system
-│   └── Footer.tsx          # Executive footer with quick actions and copyright
-├── data/
-│   ├── resumeData.ts       # Structured resume content, metrics, client profiles, and projects
-│   └── types.ts            # Strict TypeScript interfaces
+│   ├── Navbar.tsx               # Minimalist header with PDF Resume & Contact CTA
+│   ├── Hero.tsx                 # The Hook: bold typography + prominent direct CTAs
+│   ├── SecretSauceGrid.tsx      # 3-Step Pipeline Grid (Elicit → Prototype → Ship & Scale)
+│   ├── PrototypesShowcase.tsx   # Live Prototypes & Shipping Record with massive launch buttons
+│   ├── FastStatsBanner.tsx      # High-contrast 3-number impact banner (₹10 Cr+, 95%, 100%)
+│   ├── DigDeeperSection.tsx     # "The Traditional Resume Stuff" recruiter accordion
+│   └── SaaSFooter.tsx           # Minimalist conversion footer ("Ready to skip the generic BA interviews?")
 └── public/
-    ├── resume.pdf          # Downloadable resume document
-    └── icon.svg            # Branded obsidian & emerald monogram
+    └── resume.pdf               # Downloadable traditional PDF resume
 ```
 
 ---
 
-## 🚀 Live Featured Projects Showcased
+## 🛠️ The 3-Step Pipeline
 
-1. **BA & Account Management Swarm (`ba-account-swarm`)** — *AI & Agents*  
-   Multi-agent AI ecosystem automating BRDs, PRDs, client proposals, Jira backlogs, and CRM updates using local LLMs (Ollama Qwen 3.6) and MCP servers.
-2. **TradeBuddy / MaximusOne (`tradebuddy`)** — *Full-Stack Apps*  
-   Real-time institutional trading analytics dashboard and autonomous 24/7 background execution system ([Live Application](https://maximusone.vercel.app)).
-3. **AI-Powered Advisor Recruitment Prototype** — *AI & Agents*  
-   End-to-end conversational AI screening workflow with stateful FastAPI backend and n8n webhooks.
-4. **Idraneel Karyalay — Venue Management Platform (`IdraneelKaryalay-wedding-hall`)** — *Full-Stack Apps*  
-   Full-stack availability platform featuring dynamic seasonal pricing logic and mobile-ready PWA architecture.
-5. **BillVault (`billvault`)** — *Full-Stack Apps*  
-   Dark-mode personal finance and recurring obligation tracking application deployed on Vercel.
-6. **Varun's Job Bot (`varunsjobbot`)** — *Automation*  
-   Automated personal career intelligence API with FastAPI serverless deployment on Vercel.
-7. **JobSearchAgent (`JobSearchAgent`)** — *Automation*  
-   Autonomous job-hunting pipeline orchestrated via scheduled GitHub Actions workflows.
+- **01. Elicit:** Translating technical blind spots into clear business value.
+- **02. Prototype:** Building rapid AI workflows (FastAPI/Ollama) to validate customer journeys in hours, not weeks.
+- **03. Ship & Scale:** Full SDLC delivery, SLA governance, and enterprise renewals.
 
 ---
 
-## 🛠️ Local Development & Build
+## 🚀 Live Prototypes Featured
+
+1. **TradeBuddy / MaximusOne** — AI-powered trading execution dashboard & autonomous quant engine.
+   - *Tech:* Next.js, Supabase, Vercel.
+   - *Live App:* [https://maximusone.vercel.app](https://maximusone.vercel.app)
+   - *GitHub Repo:* [https://github.com/varunbhandurge/tradebuddy](https://github.com/varunbhandurge/tradebuddy)
+2. **BA & Account Management Swarm** — Autonomous multi-agent ecosystem automating BRDs, PRDs, Jira tickets, and CRM updates.
+   - *Tech:* FastAPI, local Qwen 3.6, MCP Servers.
+   - *Source Repo:* [https://github.com/varunbhandurge/ba-account-swarm](https://github.com/varunbhandurge/ba-account-swarm)
+3. **BillVault & VarunsJobBot** — Automated personal finance tracking & career automation engines.
+   - *Tech:* Next.js, FastAPI, Vercel.
+   - *Deployments:* [https://github.com/varunbhandurge/visualresume](https://github.com/varunbhandurge/visualresume)
+
+---
+
+## 📊 Fast Stats
+
+- **₹10 Cr+** — Revenue Driven via BFSI Delivery (9 bank rollouts across Tier-1 private bank).
+- **95%** — Automated KYC Accuracy Achieved (<0.1% false positives, <4% false negatives).
+- **100%** — SDLC Ownership: Pre-Sales to Renewals (Certified Scrum Master CSM®).
+
+---
+
+## 📂 The "Traditional Resume Stuff" (Recruiter Accordion)
+
+Deep-dive methodologies kept clean on the surface and expandable on click:
+- **01. Enterprise Pedigree:** ICICI Bank, HDFC ERGO, ICICI Prudential, ABSLI, Reliance ADAG.
+- **02. Core Competencies:** Customer Onboarding, Digital KYC, OCR (Google Document AI), Cybersecurity Sales, GRC, Red Teaming.
+- **03. Project Management:** Certified Scrum Master (CSM®), sprint planning, daily standups, SLA penalty defense, and zero missed contractual milestones.
+
+---
+
+## 💻 Local Development
 
 ```bash
-# Clone the repository
+# Clone
 git clone https://github.com/varunbhandurge/visualresume.git
 cd visualresume
 
-# Install dependencies
+# Install
 npm install
 
-# Start local development server
+# Start dev server
 npm run dev
-# -> Opens at http://localhost:3000
 
-# Build optimized production bundle
+# Build
 npm run build
-
-# Start production server
-npm run start
 ```
 
 ---
 
-## 🌐 Deploy to Vercel
-
-1. Push your changes to [https://github.com/varunbhandurge/visualresume](https://github.com/varunbhandurge/visualresume).
-2. Go to [Vercel Dashboard](https://vercel.com/new).
-3. Import the `visualresume` repository.
-4. Framework preset **Next.js** is auto-detected.
-5. Click **Deploy**.
-
----
-
-## 📬 Contact & Links
+## 📬 Contact
 
 - **Email:** [varun.bhandurge@gmail.com](mailto:varun.bhandurge@gmail.com)
 - **GitHub:** [https://github.com/varunbhandurge](https://github.com/varunbhandurge)
