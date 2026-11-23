@@ -1,45 +1,45 @@
 'use client';
 
 import React, { useState } from 'react';
-import { EditorialNavbar } from '@/components/EditorialNavbar';
-import { AsymmetricHero } from '@/components/AsymmetricHero';
-import { InstitutionalTrustStrip } from '@/components/InstitutionalTrustStrip';
-import { ChronologicalDeliveryTrack } from '@/components/ChronologicalDeliveryTrack';
-import { AsymmetricBuildsBento } from '@/components/AsymmetricBuildsBento';
-import { EditorialFooter } from '@/components/EditorialFooter';
-import { RecruiterDossierDrawer } from '@/components/RecruiterDossierDrawer';
+import { ExecutiveHeader } from '@/components/ExecutiveHeader';
+import { ExecutiveHero } from '@/components/ExecutiveHero';
+import { PedigreeMetricsLedger } from '@/components/PedigreeMetricsLedger';
+import { ExecutionLedgerAccordion } from '@/components/ExecutionLedgerAccordion';
+import { EngineeringBuildsGrid } from '@/components/EngineeringBuildsGrid';
+import { QuietFooter } from '@/components/QuietFooter';
+import { FullDossierDrawer } from '@/components/FullDossierDrawer';
 
 export default function HomePage() {
   const [isDossierOpen, setIsDossierOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-obsidian text-alabaster bg-architectural-grid">
+    <div className="canvas-ambient-glow flex flex-col min-h-screen text-alabaster selection:bg-champagne/20 selection:text-white">
       {/* Slide-Over Recruiter Dossier Drawer */}
-      <RecruiterDossierDrawer
+      <FullDossierDrawer
         isOpen={isDossierOpen}
         onClose={() => setIsDossierOpen(false)}
       />
 
-      {/* Editorial Top Navigation */}
-      <EditorialNavbar onOpenDossier={() => setIsDossierOpen(true)} />
+      {/* Minimalist Sticky Header */}
+      <ExecutiveHeader onOpenDossier={() => setIsDossierOpen(true)} />
 
-      {/* Main Content Stream */}
+      {/* Main Content Sections */}
       <main className="flex-1">
-        {/* Asymmetric 12-Column Swiss Grid Hero with 3-Tab Proof Switcher */}
-        <AsymmetricHero />
+        {/* Commanding, Uncluttered Hero Section */}
+        <ExecutiveHero />
 
-        {/* Institutional Trust Ledger */}
-        <InstitutionalTrustStrip />
+        {/* Institutional Pedigree & Delivery Metrics (Clean Editorial Ledger) */}
+        <PedigreeMetricsLedger />
 
-        {/* 4-Stage Chronological Delivery Pipeline */}
-        <ChronologicalDeliveryTrack />
+        {/* Interactive Core Capabilities & Execution Ledger (6-Row Expandable) */}
+        <ExecutionLedgerAccordion />
 
-        {/* Live Deployments & GitHub Repositories Bento */}
-        <AsymmetricBuildsBento />
+        {/* Live Websites & Engineering Builds (Quiet 2-Column Architectural Grid) */}
+        <EngineeringBuildsGrid />
       </main>
 
-      {/* Editorial Recruiter Footer */}
-      <EditorialFooter onOpenDossier={() => setIsDossierOpen(true)} />
+      {/* Quiet Footer */}
+      <QuietFooter />
     </div>
   );
 }

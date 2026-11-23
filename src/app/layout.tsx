@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
+  title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
   description:
-    'Bridging business origination and technical reality. Key Account Manager, Lead Business Analyst, and Certified Scrum Master (CSM®). Proven track record delivering ₹10 Cr+ across Tier-1 BFSI (ICICI Bank, HDFC ERGO, ABSLI).',
+    'End-to-end ownership across BFSI commercial negotiations, requirement elicitation, rapid AI prototyping, Agile SDLC governance, and multi-year contract renewals.',
   authors: [{ name: 'Varun Bhandurge', url: 'https://github.com/varunbhandurge' }],
   creator: 'Varun Bhandurge',
   icons: {
@@ -14,16 +14,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://github.com/varunbhandurge/visualresume',
-    title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
+    title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
     description:
-      'From deal closure and AI prototyping to full-SDLC enterprise delivery. Proven delivery across ICICI Bank, HDFC ERGO, ABSLI, and Reliance ADAG.',
+      'Delivered ₹10 Cr+ across Tier-1 BFSI (ICICI Bank, HDFC ERGO, ABSLI). From deal closure to functional AI prototypes and full-SDLC delivery.',
     siteName: 'Varun Bhandurge Executive Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
+    title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
     description:
-      'From deal closure and AI prototyping to full-SDLC enterprise delivery.',
+      'End-to-end ownership across BFSI commercial negotiations, requirement elicitation, rapid AI prototyping, and Agile SDLC governance.',
   },
   robots: {
     index: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#090A0D',
+  themeColor: '#0A0A0B',
   width: 'device-width',
   initialScale: 1,
 };
@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className="bg-obsidian text-alabaster min-h-screen antialiased selection:bg-goldWarm/20 selection:text-white">
+      <body className="bg-obsidian text-alabaster min-h-screen antialiased selection:bg-champagne/20 selection:text-white font-sans">
         {children}
       </body>
     </html>

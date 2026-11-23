@@ -9,27 +9,22 @@ const config = {
   theme: {
     extend: {
       colors: {
-        obsidian: '#090A0D',
-        alabaster: '#F5F5F0',
-        slateMuted: '#94A3B8',
-        cobalt: {
-          DEFAULT: '#3B82F6',
-          light: '#60A5FA',
-          dark: '#2563EB',
-        },
-        goldWarm: {
-          DEFAULT: '#EAB308',
-          light: '#FDE047',
-        },
+        obsidian: '#0A0A0B',
+        alabaster: '#F4F4F2',
+        champagne: '#D6C7A9',
+        mutedZinc: '#A1A1AA',
       },
       fontFamily: {
         serif: ['"Instrument Serif"', 'Georgia', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace'],
+        sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
-      boxShadow: {
-        'drawer': '-20px 0 50px 0 rgba(0, 0, 0, 0.85)',
-        'tactile': '0 12px 30px -10px rgba(0, 0, 0, 0.7)',
+      letterSpacing: {
+        tighter: '-0.03em',
+      },
+      maxWidth: {
+        '5xl': '64rem',
       },
     },
   },

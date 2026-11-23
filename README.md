@@ -1,34 +1,31 @@
-# Varun Bhandurge — Editorial Executive Portfolio & Live Builds
+# Varun Bhandurge — Senior Executive Portfolio & Live Builds
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/varunbhandurge/visualresume)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)
-![Aesthetic](https://img.shields.io/badge/Aesthetic-Swiss%20Editorial%20Obsidian-3B82F6)
-![Certified Scrum Master](https://img.shields.io/badge/Certified-Scrum%20Master%20(CSM%C2%AE)-10B981)
-![ECBA](https://img.shields.io/badge/Certified-ECBA%E2%84%A2%20(IIBA)-3B82F6)
+![Aesthetic](https://img.shields.io/badge/Aesthetic-Senior%20Executive%20Matte%20Obsidian-D6C7A9)
+![Certified Scrum Master](https://img.shields.io/badge/Certified-Scrum%20Master%20(CSM%C2%AE)-white)
+![ECBA](https://img.shields.io/badge/Certified-ECBA%E2%84%A2%20(IIBA)-white)
 
-> **"I close enterprise deals, uncover what businesses can't see from a tech POV, and ship the AI prototypes to prove it."**  
-> *Varun Bhandurge • Key Account Manager • Lead Business Analyst • Agile Project Manager (CSM®)*
+> **"I close enterprise deals, uncover what businesses miss from a tech POV, and ship AI prototypes to prove it."**  
+> *Varun Bhandurge · Key Account Manager · Lead Business Analyst · Project Manager (CSM® · ECBA™)*
 
 ---
 
-## 🏛️ Swiss Editorial Architectural Aesthetic
+## 🏛️ Senior Executive UI/UX Architecture
 
-An editorial, studio-grade portfolio and executive briefing web application for **Varun Bhandurge**, deployable seamlessly on **Vercel**.
-
-- **Asymmetric 12-Column Swiss Grid:** No generic centered hero stacks. Clean 7-column executive thesis paired with a 5-column tactile proof switcher.
-- **Editorial Typography Trio:**
-  - **Display Serif:** `Instrument Serif` (regular & italic) for editorial headline emphasis.
-  - **Body & UI:** `Plus Jakarta Sans` for crisp, authoritative readability.
-  - **Badges & Numbers:** `JetBrains Mono` for tabular metrics (`₹10 Cr+`, `95%+`) and credential tags (`CSM®`, `ECBA™`).
-- **Color Palette:**
-  - Deep Obsidian (`#090A0D`) with subtle architectural grid lines (`rgba(255,255,255,0.04)`).
-  - Warm Alabaster (`#F5F5F0`) primary typography.
-  - Cool Slate (`#94A3B8`) secondary text.
-  - Royal Cobalt (`#3B82F6`) interactive triggers.
-  - Warm Gold (`#EAB308`) enterprise impact metrics.
-- **Slide-Over Recruiter Dossier:** Full keyword and competency breakdown (BRD/PRD, Customer Onboarding, KYC, Document AI/OCR, GCP, GRC, Red Teaming, Jira, Zoho CRM) accessible with one click.
+- **Canvas & Tone:** Pure, deep matte obsidian (`#0A0A0B`) canvas with a subtle warm top ambient glow (`radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.045) 0%, transparent 100%)`).
+- **Monochrome & Warm Platinum Restraint:**
+  - Primary actions in Warm Alabaster (`#F4F4F2`) with `#0A0A0B` text.
+  - Subtle `1px solid rgba(255,255,255,0.08)` hairline dividers.
+  - Muted warm champagne (`#D6C7A9`) strictly for key financial and delivery metrics (`₹10 Cr+`, `95%+`).
+  - No blueprint/graph-paper grids, no bright blue buttons, and no multi-colored neon pills.
+- **Editorial Typography Pairing:**
+  - **Headings:** `Plus Jakarta Sans` (weight 500/600, tight tracking `-0.03em`) paired with `Instrument Serif` (italic) on key phrases.
+  - **Body Text:** `Inter` (`15px–16px`, relaxed leading `1.65`, `#A1A1AA` for descriptions, `#F4F4F2` for titles).
+  - **Numbers & Credentials:** `JetBrains Mono` (`12px–13px`, tabular numerals).
+- **Generous Spacing:** `max-w-5xl` editorial container with generous vertical breathing room (`py-24` to `py-32`).
 
 ---
 
@@ -37,73 +34,68 @@ An editorial, studio-grade portfolio and executive briefing web application for 
 ```
 src/
 ├── app/
-│   ├── globals.css                       # Google Fonts, Swiss architectural grid, tokens
-│   ├── layout.tsx                        # Metadata, OpenGraph, and viewport config
-│   └── page.tsx                          # Assembles all editorial sections & drawer state
+│   ├── globals.css                       # Matte obsidian tokens, Google Fonts import, hairline utils
+│   ├── layout.tsx                        # Metadata, OpenGraph, viewport configuration
+│   └── page.tsx                          # Assembles executive sections & slide-over drawer state
 ├── components/
-│   ├── EditorialNavbar.tsx               # Minimal sticky header with Full Dossier trigger
-│   ├── AsymmetricHero.tsx                # 12-col Swiss layout with 3-tab proof switcher
-│   ├── InstitutionalTrustStrip.tsx       # Edge-to-edge Tier-1 BFSI client ledger
-│   ├── ChronologicalDeliveryTrack.tsx    # 4-stage connected horizontal delivery pipeline
-│   ├── AsymmetricBuildsBento.tsx         # Bento grid of live deployments & GitHub repos
-│   ├── EditorialFooter.tsx               # Minimalist footer with contact links
-│   └── RecruiterDossierDrawer.tsx        # Slide-over recruiter dossier with complete taxonomy
+│   ├── ExecutiveHeader.tsx               # Minimalist sticky header with inline credentials & actions
+│   ├── ExecutiveHero.tsx                 # Large breathing H1, 2-line executive summary, monochrome actions
+│   ├── PedigreeMetricsLedger.tsx         # Tier-1 BFSI client band & 3-column open metric strip
+│   ├── ExecutionLedgerAccordion.tsx      # 6-row chronological interactive table (AM → BA → PM → AM)
+│   ├── EngineeringBuildsGrid.tsx         # Quiet 2-column architectural grid with featured MaximusOne
+│   ├── FullDossierDrawer.tsx             # Slide-over recruiter drawer with complete keyword matrix
+│   └── QuietFooter.tsx                   # Single horizontal row with contact links and PDF resume
 └── public/
     ├── resume.pdf                        # Downloadable traditional PDF resume
-    └── icon.svg                          # Modern high-contrast monogram favicon
+    └── icon.svg                          # High-contrast monogram favicon
 ```
 
 ---
 
-## 💼 Core Enterprise Competencies & Execution Engine
+## 💼 Core Capabilities & Execution Ledger (6 Chronological Phases)
 
-1. **Commercial & SLA Closure:** Structuring high-value multi-year BFSI contracts, SLA penalties/incentives, and stakeholder alignment.
-2. **Requirement Elicitation & Documentation:** Uncovering unstated business pain points; authoring BRDs, PRDs, FRDs, and user story maps.
-3. **Rapid AI Prototyping:** Shipping working AI prototypes (FastAPI, Ollama, Vercel) in days to validate customer journeys before heavy sprint planning.
-4. **Full-SDLC Agile Delivery:** Leading cross-functional squads with CSM® Scrum Alliance and ECBA™ IIBA governance.
-5. **BFSI Onboarding & Document AI:** Scaling automated KYC and OCR extraction pipelines to 95%+ precision across millions of institutional onboardings.
-6. **Cybersecurity & Renewals:** Managing GRC audits, red-teaming checks, and securing recurring multi-year enterprise account renewals.
-
----
-
-## 🏛️ Institutional Track Record & Tier-1 BFSI Partners
-
-- **ICICI Bank:** Core banking customer onboarding & automated KYC verification.
-- **HDFC ERGO:** General insurance claims & document processing pipelines.
-- **ICICI Prudential:** Life insurance customer onboarding and verification workflows.
-- **ABSLI (Aditya Birla Sun Life):** Wealth & protection document automation.
-- **Reliance ADAG:** Enterprise infrastructure and IT operations.
-
-### Audited Metrics:
-- **₹10 Cr+** delivered across 9 enterprise BFSI rollouts within 10 months.
-- **95%+** automated precision on KYC & OCR document extraction pipelines.
-- **40%** reduction in cycle time from RFP scoping to working production sprint.
+1. **01 · Commercial Closure & SLA Negotiation (Account Manager):** Leading client conversations, stakeholder alignment, deal closing, and enterprise SLA structuring.
+2. **02 · Requirement Elicitation & Critical Documentation (Lead BA · ECBA™):** Translating technical blind spots into business clarity via BRDs, PRDs, FRDs, and process flows.
+3. **03 · Rapid AI Prototyping & Engineering Handoff (AI Builder):** Building functional AI prototypes and shipping them directly to technical teams to validate journeys fast.
+4. **04 · Full-SDLC Agile Governance (Project Manager · CSM®):** Overseeing end-to-end delivery across sprints, daily standups, resource planning, and production releases.
+5. **05 · BFSI Customer Onboarding, KYC & OCR (Domain Specialist):** Architecting high-volume digital onboarding and intelligent document processing pipelines.
+6. **06 · Cybersecurity Sales, Managed Services & Renewals (Account Manager):** Selling enterprise GRC, Red Teaming, and managed services while driving client onboarding and renewals.
 
 ---
 
-## 🚀 Live Deployments & Open-Source Codebases
+## 🏛️ Institutional Pedigree & Tier-1 BFSI Partners
 
-| Project | Live URL / Repo | Highlights & Stack |
+**ICICI Bank** · **HDFC ERGO** · **ICICI Prudential** · **ABSLI** · **Reliance ADAG**
+
+- **₹10 Cr+ Enterprise Revenue Driven:** Delivered 9 BFSI projects within 10 months (55% of company revenue).
+- **95%+ KYC & OCR Automation Precision:** Rolled out Document AI onboarding pipelines with <0.1% false positives and <4% false negatives.
+- **100% Deal-to-Renewal Ownership:** Full accountability from pre-sales SLA negotiation and Agile sprints to managed services and renewals.
+
+---
+
+## 🚀 Shipped Deployments & Repositories
+
+| Project | Live / Repo | Architecture |
 | :--- | :--- | :--- |
-| **MaximusOne / TradeBuddy** | [maximusone.vercel.app](https://maximusone.vercel.app) • [GitHub](https://github.com/varunbhandurge/tradebuddy) | 24/7 autonomous multi-asset algorithmic trading engine with real-time telemetry, FastAPI backend, Supabase sync, and Vercel crons. |
-| **BA & AM Swarm (`BASwarm`)** | [GitHub Repo](https://github.com/varunbhandurge/BASwarm) | Autonomous multi-agent pipeline for RFP parsing, stakeholder matrix generation, and automated BRD/PRD authoring. |
-| **BillVault (`Bill-Vault`)** | [GitHub Repo](https://github.com/varunbhandurge/Bill-Vault) | Enterprise financial document AI & bill OCR extraction platform with schema validation. |
-| **Job Search Agent (`JobSearchAgent`)** | [GitHub Repo](https://github.com/varunbhandurge/JobSearchAgent) | Headhunter tracking, requirements matching, and dynamic resume tailoring pipeline. |
-| **LocalQwen & AntigravitySyncAgent** | [LocalQwen](https://github.com/varunbhandurge/LocalQwen) • [SyncAgent](https://github.com/varunbhandurge/AntigravitySyncAgent) | Local LLM tooling (Qwen 2.5 on Ollama) + cross-device agent trajectory sync daemon. |
-| **Idraneel Karyalay Venue Platform** | [GitHub Repo](https://github.com/varunbhandurge/IdraneelKaryalay-wedding-hall) | Commercial booking, venue availability, and event reservation management portal. |
+| **MaximusOne / TradeBuddy** | [maximusone.vercel.app](https://maximusone.vercel.app) • [GitHub](https://github.com/varunbhandurge/tradebuddy) | AI-powered trading analytics and autonomous execution engine built with Next.js, FastAPI, Supabase, and Vercel crons. |
+| **BA & AM Swarm (`BASwarm`)** | [GitHub Repo](https://github.com/varunbhandurge/BASwarm) | Multi-agent workflow automating BRDs, PRDs, proposals, CRM updates, and Jira delegation via Python, FastAPI, and local LLMs. |
+| **BillVault (`Bill-Vault`)** | [GitHub Repo](https://github.com/varunbhandurge/Bill-Vault) | Personal finance and document vault web application engineered with TypeScript and Next.js. |
+| **Job Search Agent (`JobSearchAgent`)** | [GitHub Repo](https://github.com/varunbhandurge/JobSearchAgent) | Autonomous job discovery and application tracking pipeline orchestrated with Python and GitHub Actions. |
+| **LocalQwen & AntigravitySyncAgent** | [LocalQwen](https://github.com/varunbhandurge/LocalQwen) · [SyncAgent](https://github.com/varunbhandurge/AntigravitySyncAgent) | Offline local LLM inference tooling and autonomous workspace synchronization agents. |
+| **Idraneel Karyalay & Digital Personal Trainer** | [Venue Platform](https://github.com/varunbhandurge/IdraneelKaryalay-wedding-hall) · [Fitness AI](https://github.com/varunbhandurge/DigitalPersonalTrainer) | Commercial venue booking platform with dynamic pricing and an AI-assisted fitness coaching engine. |
 
 ---
 
-## 🛠️ Local Development & Build Verification
+## 🛠️ Verification & Build Commands
 
 ```bash
-# 1. Install dependencies
+# Install dependencies
 npm install
 
-# 2. Run local development server
+# Run local development server
 npm run dev
 
-# 3. Build for production (Vercel-ready)
+# Run production build (Vercel-ready)
 npm run build
 ```
 
