@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
   description:
-    'End-to-end ownership across BFSI commercial negotiations, requirement elicitation, rapid AI prototyping, Agile SDLC governance, and multi-year contract renewals.',
+    'From enterprise deal closure and requirement elicitation to functional AI prototypes and full-SDLC delivery. Proven ₹10 Cr+ delivery footprint across Tier-1 BFSI (ICICI Bank, HDFC ERGO, ABSLI).',
   authors: [{ name: 'Varun Bhandurge', url: 'https://github.com/varunbhandurge' }],
   creator: 'Varun Bhandurge',
   icons: {
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     url: 'https://github.com/varunbhandurge/visualresume',
     title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
     description:
-      'Delivered ₹10 Cr+ across Tier-1 BFSI (ICICI Bank, HDFC ERGO, ABSLI). From deal closure to functional AI prototypes and full-SDLC delivery.',
-    siteName: 'Varun Bhandurge Executive Portfolio',
+      'I close enterprise deals, uncover what businesses can’t articulate from a tech POV, and ship AI prototypes to prove it.',
+    siteName: 'Varun Bhandurge Portfolio & Live Systems',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Varun Bhandurge — Key Account Manager · Lead BA · Project Manager (CSM®)',
     description:
-      'End-to-end ownership across BFSI commercial negotiations, requirement elicitation, rapid AI prototyping, and Agile SDLC governance.',
+      'I close enterprise deals, uncover what businesses can’t articulate from a tech POV, and ship AI prototypes to prove it.',
   },
   robots: {
     index: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0A0A0B',
+  themeColor: '#08090C',
   width: 'device-width',
   initialScale: 1,
 };
@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className="bg-obsidian text-alabaster min-h-screen antialiased selection:bg-champagne/20 selection:text-white font-sans">
+      <body className="bg-[#08090C] text-[#F8FAFC] min-h-screen antialiased selection:bg-brand-cyan/30 selection:text-white">
         {children}
       </body>
     </html>

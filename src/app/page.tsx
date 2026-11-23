@@ -1,45 +1,45 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ExecutiveHeader } from '@/components/ExecutiveHeader';
-import { ExecutiveHero } from '@/components/ExecutiveHero';
-import { PedigreeMetricsLedger } from '@/components/PedigreeMetricsLedger';
-import { ExecutionLedgerAccordion } from '@/components/ExecutionLedgerAccordion';
-import { EngineeringBuildsGrid } from '@/components/EngineeringBuildsGrid';
-import { QuietFooter } from '@/components/QuietFooter';
-import { FullDossierDrawer } from '@/components/FullDossierDrawer';
+import { LinearNavbar } from '@/components/LinearNavbar';
+import { DynamicHeroShowcase } from '@/components/DynamicHeroShowcase';
+import { InteractiveBFSIStrip } from '@/components/InteractiveBFSIStrip';
+import { ConnectedEngineSequence } from '@/components/ConnectedEngineSequence';
+import { BentoSystemsShowcase } from '@/components/BentoSystemsShowcase';
+import { LinearFooter } from '@/components/LinearFooter';
+import { SlideOverDossier } from '@/components/SlideOverDossier';
 
 export default function HomePage() {
-  const [isDossierOpen, setIsDossierOpen] = useState(false);
+  const [dossierOpen, setDossierOpen] = useState(false);
 
   return (
-    <div className="canvas-ambient-glow flex flex-col min-h-screen text-alabaster selection:bg-champagne/20 selection:text-white">
-      {/* Slide-Over Recruiter Dossier Drawer */}
-      <FullDossierDrawer
-        isOpen={isDossierOpen}
-        onClose={() => setIsDossierOpen(false)}
+    <div className="ambient-scene-glow min-h-screen flex flex-col text-white selection:bg-cyan-500/30 selection:text-white">
+      {/* Slide-Over Recruiter Dossier */}
+      <SlideOverDossier
+        isOpen={dossierOpen}
+        onClose={() => setDossierOpen(false)}
       />
 
-      {/* Minimalist Sticky Header */}
-      <ExecutiveHeader onOpenDossier={() => setIsDossierOpen(true)} />
+      {/* Floating Linear Header */}
+      <LinearNavbar onOpenDossier={() => setDossierOpen(true)} />
 
-      {/* Main Content Sections */}
+      {/* Main Content Stream */}
       <main className="flex-1">
-        {/* Commanding, Uncluttered Hero Section */}
-        <ExecutiveHero />
+        {/* Dynamic Hero Showcase with Live Telemetry & Prototype Sandbox Deck */}
+        <DynamicHeroShowcase />
 
-        {/* Institutional Pedigree & Delivery Metrics (Clean Editorial Ledger) */}
-        <PedigreeMetricsLedger />
+        {/* Interactive Institutional BFSI Delivery Ledger */}
+        <InteractiveBFSIStrip />
 
-        {/* Interactive Core Capabilities & Execution Ledger (6-Row Expandable) */}
-        <ExecutionLedgerAccordion />
+        {/* 4-Stage Chronological Delivery Engine */}
+        <ConnectedEngineSequence />
 
-        {/* Live Websites & Engineering Builds (Quiet 2-Column Architectural Grid) */}
-        <EngineeringBuildsGrid />
+        {/* Live Systems & GitHub Bento Showcase */}
+        <BentoSystemsShowcase />
       </main>
 
-      {/* Quiet Footer */}
-      <QuietFooter />
+      {/* Modern Linear Footer */}
+      <LinearFooter onOpenDossier={() => setDossierOpen(true)} />
     </div>
   );
 }
