@@ -4,9 +4,12 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Varun Bhandurge — Key Account Manager | Lead BA | Project Manager (CSM®)',
   description:
-    'From deal closure and AI prototyping to full-SDLC enterprise delivery. Varun Bhandurge: Key Account Manager, Lead Business Analyst, and Certified Scrum Master (CSM®).',
+    'Bridging business origination and technical reality. Key Account Manager, Lead Business Analyst, and Certified Scrum Master (CSM®). Proven track record delivering ₹10 Cr+ across Tier-1 BFSI (ICICI Bank, HDFC ERGO, ABSLI).',
   authors: [{ name: 'Varun Bhandurge', url: 'https://github.com/varunbhandurge' }],
   creator: 'Varun Bhandurge',
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#07080A',
+  themeColor: '#090A0D',
   width: 'device-width',
   initialScale: 1,
 };
@@ -40,8 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark font-sans">
-      <body className="bg-[#07080A] text-[#F4F4F5] min-h-screen">
+    <html lang="en" className="dark scroll-smooth">
+      <body className="bg-obsidian text-alabaster min-h-screen antialiased selection:bg-goldWarm/20 selection:text-white">
         {children}
       </body>
     </html>

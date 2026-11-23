@@ -1,22 +1,45 @@
-import React from 'react';
-import { ExecutiveNavbar } from '@/components/ExecutiveNavbar';
-import { ExecutiveHero } from '@/components/ExecutiveHero';
-import { EnterprisePedigreeSection } from '@/components/EnterprisePedigreeSection';
-import { ExecutionSequence } from '@/components/ExecutionSequence';
-import { ShippedBuildsGrid } from '@/components/ShippedBuildsGrid';
-import { RecruiterSpecsFooter } from '@/components/RecruiterSpecsFooter';
+'use client';
+
+import React, { useState } from 'react';
+import { EditorialNavbar } from '@/components/EditorialNavbar';
+import { AsymmetricHero } from '@/components/AsymmetricHero';
+import { InstitutionalTrustStrip } from '@/components/InstitutionalTrustStrip';
+import { ChronologicalDeliveryTrack } from '@/components/ChronologicalDeliveryTrack';
+import { AsymmetricBuildsBento } from '@/components/AsymmetricBuildsBento';
+import { EditorialFooter } from '@/components/EditorialFooter';
+import { RecruiterDossierDrawer } from '@/components/RecruiterDossierDrawer';
 
 export default function HomePage() {
+  const [isDossierOpen, setIsDossierOpen] = useState(false);
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#07080A] text-[#F4F4F5] selection:bg-amber-500/20 selection:text-white">
-      <ExecutiveNavbar />
+    <div className="min-h-screen flex flex-col bg-obsidian text-alabaster bg-architectural-grid">
+      {/* Slide-Over Recruiter Dossier Drawer */}
+      <RecruiterDossierDrawer
+        isOpen={isDossierOpen}
+        onClose={() => setIsDossierOpen(false)}
+      />
+
+      {/* Editorial Top Navigation */}
+      <EditorialNavbar onOpenDossier={() => setIsDossierOpen(true)} />
+
+      {/* Main Content Stream */}
       <main className="flex-1">
-        <ExecutiveHero />
-        <EnterprisePedigreeSection />
-        <ExecutionSequence />
-        <ShippedBuildsGrid />
+        {/* Asymmetric 12-Column Swiss Grid Hero with 3-Tab Proof Switcher */}
+        <AsymmetricHero />
+
+        {/* Institutional Trust Ledger */}
+        <InstitutionalTrustStrip />
+
+        {/* 4-Stage Chronological Delivery Pipeline */}
+        <ChronologicalDeliveryTrack />
+
+        {/* Live Deployments & GitHub Repositories Bento */}
+        <AsymmetricBuildsBento />
       </main>
-      <RecruiterSpecsFooter />
+
+      {/* Editorial Recruiter Footer */}
+      <EditorialFooter onOpenDossier={() => setIsDossierOpen(true)} />
     </div>
   );
 }

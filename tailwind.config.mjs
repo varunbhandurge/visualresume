@@ -9,32 +9,27 @@ const config = {
   theme: {
     extend: {
       colors: {
-        obsidian: {
-          DEFAULT: '#07080A',
-          subtle: '#0B0C10',
-          surface: '#0F1015',
+        obsidian: '#090A0D',
+        alabaster: '#F5F5F0',
+        slateMuted: '#94A3B8',
+        cobalt: {
+          DEFAULT: '#3B82F6',
+          light: '#60A5FA',
+          dark: '#2563EB',
         },
-        champagne: {
-          DEFAULT: '#F59E0B',
-          light: '#FBBF24',
-          dim: '#D97706',
-        },
-        executive: {
-          indigo: '#6366F1',
-          indigoLight: '#818CF8',
-          text: '#F4F4F5',
-          muted: '#A1A1AA',
-          subtle: '#71717A',
+        goldWarm: {
+          DEFAULT: '#EAB308',
+          light: '#FDE047',
         },
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'GeistMono', 'monospace'],
+        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
       },
       boxShadow: {
-        'executive-card': '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
-        'spotlight': '0 0 80px 20px rgba(99, 102, 241, 0.08)',
-        'gold-glow': '0 0 30px -5px rgba(245, 158, 11, 0.2)',
+        'drawer': '-20px 0 50px 0 rgba(0, 0, 0, 0.85)',
+        'tactile': '0 12px 30px -10px rgba(0, 0, 0, 0.7)',
       },
     },
   },
