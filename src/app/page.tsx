@@ -1,7 +1,7 @@
 import React from 'react';
 import { TerminalNavbar } from '@/components/TerminalNavbar';
 import { AntiHero } from '@/components/AntiHero';
-import { ImpactGrid } from '@/components/ImpactGrid';
+import { EnterprisePedigreeImpact } from '@/components/EnterprisePedigreeImpact';
 import { ProofOfWorkBento } from '@/components/ProofOfWorkBento';
 import { ExecutionTrifecta } from '@/components/ExecutionTrifecta';
 import { ExecutiveClose } from '@/components/ExecutiveClose';
@@ -12,7 +12,7 @@ export default function HomePage() {
       <TerminalNavbar />
       <main className="flex-1">
         <AntiHero />
-        <ImpactGrid />
+        <EnterprisePedigreeImpact />
         <ProofOfWorkBento />
         <ExecutionTrifecta />
       </main>

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, ShieldCheck, Activity, Terminal } from 'lucide-react';
+import { ArrowUpRight, Terminal, Activity, Bot, Calendar, Zap } from 'lucide-react';
 
 export const ProofOfWorkBento: React.FC = () => {
   return (
@@ -12,20 +12,20 @@ export const ProofOfWorkBento: React.FC = () => {
         <div className="flex items-center justify-between mb-12">
           <div className="font-mono text-xs uppercase tracking-widest text-neutral-400 flex items-center gap-2">
             <span className="w-2 h-2 bg-terminal"></span>
-            <span>PROOF OF WORK // LIVE REPOSITORIES &amp; DEPLOYMENTS</span>
+            <span>PROOF OF WORK // INTERACTIVE LIVE DEPLOYMENTS</span>
           </div>
-          <span className="font-mono text-xs text-neutral-600">[ 04 NODES ]</span>
+          <span className="font-mono text-xs text-neutral-600">[ 04 DEPLOYMENTS ]</span>
         </div>
 
         {/* Asymmetrical Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
-          {/* Card 1: Large - Live Production (8 Cols) */}
+          {/* Card 1: MaximusOne / TradeBuddy (Large - Live Production - 7 Cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
-            className="md:col-span-8 border border-surface-border bg-surface p-7 sm:p-9 flex flex-col justify-between hover:border-terminal/50 transition-colors group"
+            className="md:col-span-7 border border-surface-border bg-surface p-7 sm:p-9 flex flex-col justify-between hover:border-terminal/50 transition-colors group"
           >
             <div>
               <div className="flex items-center justify-between font-mono text-[11px] mb-4">
@@ -43,7 +43,7 @@ export const ProofOfWorkBento: React.FC = () => {
                 AI-powered autonomous trading execution.
               </p>
 
-              {/* Terminal status line */}
+              {/* Status Box */}
               <div className="mt-8 p-4 bg-black border border-surface-border font-mono text-xs text-neutral-400 flex items-center justify-between">
                 <span className="text-neutral-500">&gt; quant_daemon: sub-50ms tick execution</span>
                 <span className="text-terminal">VERIFIED 24/7</span>
@@ -55,20 +55,20 @@ export const ProofOfWorkBento: React.FC = () => {
                 href="https://maximusone.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-terminal text-black font-mono font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-terminal-glow"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-terminal text-black font-mono font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-terminal-glow"
               >
                 <span>[Launch App ↗]</span>
               </a>
             </div>
           </motion.div>
 
-          {/* Card 2: Medium - AI Engineering (4 Cols) */}
+          {/* Card 2: BA & Account Swarm (AI Engineering - 5 Cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.1 }}
-            className="md:col-span-4 border border-surface-border bg-surface p-7 flex flex-col justify-between hover:border-terminal/50 transition-colors group"
+            className="md:col-span-5 border border-surface-border bg-surface p-7 flex flex-col justify-between hover:border-terminal/50 transition-colors group"
           >
             <div>
               <div className="flex items-center justify-between font-mono text-[11px] mb-4">
@@ -89,42 +89,48 @@ export const ProofOfWorkBento: React.FC = () => {
                 href="https://github.com/varunbhandurge/ba-account-swarm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 border border-surface-border bg-black text-white hover:border-white font-mono text-xs uppercase tracking-wider transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 border border-surface-border bg-black text-white hover:border-white font-mono text-xs uppercase tracking-wider transition-colors"
               >
                 <span>[Inspect Source ↗]</span>
               </a>
             </div>
           </motion.div>
 
-          {/* Card 3: Medium - Enterprise Sales (6 Cols) */}
+          {/* Card 3: Idraneel Karyalay Venue Platform (Full-Stack - 6 Cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.15 }}
-            className="md:col-span-6 border border-surface-border bg-surface p-7 flex flex-col justify-between hover:border-neutral-700 transition-colors"
+            className="md:col-span-6 border border-surface-border bg-surface p-7 flex flex-col justify-between hover:border-terminal/50 transition-colors group"
           >
             <div>
               <div className="flex items-center justify-between font-mono text-[11px] mb-4">
-                <span className="text-neutral-400 font-bold">ENTERPRISE SALES</span>
-                <span className="text-neutral-500">Tier-1 BFSI Retainers</span>
+                <span className="text-neutral-400 font-bold">FULL-STACK</span>
+                <span className="text-neutral-500">Dynamic Booking Engine</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-bold text-white font-sans tracking-tight flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-neutral-400" />
-                Cybersecurity &amp; GRC
+              <h3 className="text-xl sm:text-2xl font-bold text-white font-sans tracking-tight">
+                Idraneel Karyalay Venue Platform
               </h3>
               <p className="mt-2 text-sm font-sans text-neutral-400 leading-relaxed">
-                Consultative selling, red teaming, and complex SLA negotiations for Tier-1 BFSI.
+                Dynamic booking engine with real-time pricing and availability.
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-surface-border font-mono text-[11px] text-neutral-500">
-              [ Institutional Governance: ICICI • HDFC ERGO • ABSLI ]
+            <div className="mt-8 pt-6 border-t border-surface-border">
+              <a
+                href="https://github.com/varunbhandurge/IdraneelKaryalay-wedding-hall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 border border-surface-border bg-black text-white hover:border-white font-mono text-xs uppercase tracking-wider transition-colors"
+              >
+                <span>[View Source ↗]</span>
+              </a>
             </div>
           </motion.div>
 
-          {/* Card 4: Small - Automation (6 Cols) */}
+          {/* Card 4: Vercel Pipelines: BillVault & JobBot (Automation - 6 Cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -135,23 +141,23 @@ export const ProofOfWorkBento: React.FC = () => {
             <div>
               <div className="flex items-center justify-between font-mono text-[11px] mb-4">
                 <span className="text-neutral-400 font-bold">AUTOMATION</span>
-                <span className="text-neutral-500">Vercel Serverless Crons</span>
+                <span className="text-neutral-500">Serverless Crons</span>
               </div>
 
               <h3 className="text-xl sm:text-2xl font-bold text-white font-sans tracking-tight">
-                Vercel Pipelines (BillVault / JobBot)
+                Vercel Pipelines: BillVault &amp; JobBot
               </h3>
               <p className="mt-2 text-sm font-sans text-neutral-400 leading-relaxed">
                 Serverless finance and execution cron jobs.
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-surface-border">
+            <div className="mt-8 pt-6 border-t border-surface-border">
               <a
                 href="https://github.com/varunbhandurge"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 border border-surface-border bg-black text-white hover:border-white font-mono text-xs uppercase tracking-wider transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 border border-surface-border bg-black text-white hover:border-white font-mono text-xs uppercase tracking-wider transition-colors"
               >
                 <span>[View Repos ↗]</span>
               </a>

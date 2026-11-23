@@ -12,11 +12,11 @@
 
 ---
 
-## ⚡ Critical Directives
+## ⚡ Critical Directives & Visual Hierarchy
 
-- **NO RESUME TROPES:** No timelines, "About Me" paragraphs, skill progress bars, or generic corporate filler.
 - **AESTHETIC:** Brutalist SaaS / Executive Terminal (`#000000` pitch black background, high-contrast monospace & sans typography, single neon green `#00FF00` accent for live links).
-- **WORD COUNT LIMITS:** Strictly max 15 words per descriptive block. The data and live links do the talking.
+- **NO RESUME TROPES:** No timelines, "About Me" paragraphs, skill progress bars, or generic corporate filler.
+- **HIERARCHY MANDATE:** The **"Enterprise Pedigree & Delivery Impact"** section dominates the screen directly below the hero.
 
 ---
 
@@ -25,41 +25,53 @@
 ```
 src/
 ├── app/
-│   ├── globals.css              # Brutalist #000000 tokens, terminal scrollbars
-│   ├── layout.tsx               # Next.js Font optimization, SEO metadata
-│   └── page.tsx                 # Executive Proof-of-Work briefing page
+│   ├── globals.css                       # Brutalist #000000 tokens, terminal scrollbars
+│   ├── layout.tsx                        # Next.js Font optimization, SEO metadata
+│   └── page.tsx                          # Executive Proof-of-Work briefing page
 ├── components/
-│   ├── TerminalNavbar.tsx       # Minimalist top-bar terminal identifier
-│   ├── AntiHero.tsx             # H1: Stop losing months to misaligned requirements
-│   ├── ImpactGrid.tsx           # 3-column data-dense strip (Revenue, Accuracy, Trust)
-│   ├── ProofOfWorkBento.tsx     # Asymmetrical bento grid with direct deployment portals
-│   ├── ExecutionTrifecta.tsx    # 3-point stark execution gates (Elicit, Prototype, Govern)
-│   └── ExecutiveClose.tsx       # "You can read a PDF, or we can talk about your Q3 deployment bottlenecks."
+│   ├── TerminalNavbar.tsx                # VB://EXECUTIVE_POW status bar
+│   ├── AntiHero.tsx                      # H1: Stop losing months to misaligned requirements
+│   ├── EnterprisePedigreeImpact.tsx      # MASSIVE: BFSI Brand Marquee + 3 Giant Impact Cards
+│   ├── ProofOfWorkBento.tsx              # Asymmetrical bento grid with live deployment portals
+│   ├── ExecutionTrifecta.tsx             # 3-point stark execution gates (Elicit, Prototype, Govern)
+│   └── ExecutiveClose.tsx                # "You can read a PDF, or we can talk about your Q3 bottlenecks."
 └── public/
-    └── resume.pdf               # Downloadable traditional PDF resume
+    └── resume.pdf                        # Downloadable traditional PDF resume
 ```
 
 ---
 
-## 📊 The Financial & Operational Impact
+## 🏛️ Enterprise Pedigree & Delivery Impact (Dominant Screen Section)
 
-1. **The Revenue:** `₹10 Cr+` / Delivered 9 BFSI enterprise projects in 10 months.
-2. **The Accuracy:** `95%+` / Automated KYC & OCR onboarding precision achieved.
-3. **The Trust:** `Zero to Production` / Full SDLC ownership across ICICI, HDFC ERGO, ABSLI, Reliance ADAG.
+### The Trust Grid (Tier-1 BFSI Institutional Roster)
+- **ICICI BANK**
+- **HDFC ERGO**
+- **ICICI PRUDENTIAL**
+- **ABSLI**
+- **RELIANCE ADAG**
+
+### The Delivery Impact (3 Massive Metric Cards)
+1. **₹10 Cr+ Revenue Driven:** *Delivered 9 enterprise projects within a 10-month window.*
+2. **95%+ KYC Automation Accuracy:** *Rolled out OCR pipelines with <0.1% false positives and <4% false negatives.*
+3. **End-to-End SDLC:** *Complete ownership from pre-sales & cybersecurity SLA negotiations to production launch and renewals.*
 
 ---
 
-## 🚀 The Proof of Work (Interactive Bento Grid)
+## 🚀 The Proof of Work (Interactive Live Deployments)
 
-- **MaximusOne / TradeBuddy:** AI-powered autonomous trading execution.  
+- **MaximusOne / TradeBuddy (Live Production):**  
+  *Subtitle:* AI-powered autonomous trading execution.  
   *Tech:* Next.js, Supabase.  
   *Action:* `[Launch App ↗]` ([maximusone.vercel.app](https://maximusone.vercel.app))
-- **BA & Account Swarm:** Multi-agent workflow automating BRDs and CRMs via local LLMs.  
+- **BA & Account Swarm (AI Engineering):**  
+  *Subtitle:* Multi-agent workflow automating BRDs and CRMs via local LLMs.  
   *Tech:* FastAPI, Qwen 3.6, MCP.  
   *Action:* `[Inspect Source ↗]` ([github.com/varunbhandurge/ba-account-swarm](https://github.com/varunbhandurge/ba-account-swarm))
-- **Cybersecurity & GRC:** Consultative selling, red teaming, and complex SLA negotiations for Tier-1 BFSI.  
-  *Governance:* ICICI • HDFC ERGO • ABSLI.
-- **Vercel Pipelines (BillVault / JobBot):** Serverless finance and execution cron jobs.  
+- **Idraneel Karyalay Venue Platform (Full-Stack):**  
+  *Subtitle:* Dynamic booking engine with real-time pricing and availability.  
+  *Action:* `[View Source ↗]` ([github.com/varunbhandurge/IdraneelKaryalay-wedding-hall](https://github.com/varunbhandurge/IdraneelKaryalay-wedding-hall))
+- **Vercel Pipelines: BillVault & JobBot (Automation):**  
+  *Subtitle:* Serverless finance and execution cron jobs.  
   *Action:* `[View Repos ↗]` ([github.com/varunbhandurge](https://github.com/varunbhandurge))
 
 ---

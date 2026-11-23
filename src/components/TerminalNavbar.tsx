@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowUpRight, Terminal } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export const TerminalNavbar: React.FC = () => {
   return (
@@ -20,16 +20,16 @@ export const TerminalNavbar: React.FC = () => {
         {/* Quick Actions */}
         <div className="flex items-center gap-4">
           <a
+            href="#pedigree"
+            className="text-neutral-400 hover:text-white transition-colors"
+          >
+            [ Pedigree ]
+          </a>
+          <a
             href="#proof"
             className="text-neutral-400 hover:text-white transition-colors"
           >
             [ Proof ]
-          </a>
-          <a
-            href="#impact"
-            className="text-neutral-400 hover:text-white transition-colors"
-          >
-            [ Metrics ]
           </a>
           <a
             href="#trifecta"
