@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDownRight, Download, Sparkles, Terminal } from 'lucide-react';
+import { ArrowDownRight, Download, Terminal, ShieldCheck } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -20,9 +20,9 @@ export const Hero: React.FC = () => {
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slatecard-border bg-slatecard/80 text-xs font-mono text-neutral-300 mb-8 backdrop-blur-md"
         >
           <span className="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
-          <span className="text-white font-semibold">ZERO FLUFF</span>
+          <span className="text-white font-semibold">VARUN BHANDURGE</span>
           <span className="text-neutral-500">•</span>
-          <span className="text-neutral-400">ENTERPRISE SAAS PLAYBOOK</span>
+          <span className="text-neutral-400">EXECUTIVE COMMAND &amp; BUILDER</span>
         </motion.div>
 
         {/* Massive Bold Headline */}
@@ -38,14 +38,14 @@ export const Hero: React.FC = () => {
           </span>
         </motion.h1>
 
-        {/* Subtext (Max 2 lines) */}
+        {/* Subtext */}
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 text-lg sm:text-xl text-neutral-300 font-sans max-w-3xl leading-relaxed"
         >
-          <strong className="text-white font-semibold">Varun Bhandurge.</strong> Key Account Manager, Lead BA, and Builder. I bridge the gap between ambiguous stakeholder demands and deployed technical reality.
+          Key Account Manager, Lead BA, and Project Manager. I bridge the gap between ambiguous stakeholder demands and deployed technical reality.
         </motion.p>
 
         {/* Prominent Dual CTAs */}

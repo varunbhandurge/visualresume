@@ -1,17 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Download, ArrowUpRight, Mail, Menu, X, Terminal } from 'lucide-react';
+import { Download, Mail, Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Secret Sauce', href: '#secret-sauce' },
+    { label: 'Capabilities', href: '#capabilities' },
     { label: 'Live Prototypes', href: '#prototypes' },
     { label: 'Impact', href: '#stats' },
-    { label: 'Traditional Resume', href: '#resume-stuff' },
   ];
 
   return (
@@ -28,7 +26,7 @@ export const Navbar: React.FC = () => {
             </span>
             <span className="font-mono text-[10px] text-neutral-400 flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-pulse"></span>
-              Active Builder & Lead BA
+              Lead BA &amp; Builder
             </span>
           </div>
         </a>

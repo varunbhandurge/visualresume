@@ -4,35 +4,33 @@
 ![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11.11-FF0055?logo=framer)
 ![Certified Scrum Master](https://img.shields.io/badge/Certified-Scrum%20Master%20(CSM%C2%AE)-10B981)
 
 > **"I uncover what your business needs but can't articulate—and I ship the AI prototypes to prove it."**  
-> Varun Bhandurge. Key Account Manager, Lead BA, and Builder. I bridge the gap between ambiguous stakeholder demands and deployed technical reality.
+> Key Account Manager, Lead BA, and Project Manager. I bridge the gap between ambiguous stakeholder demands and deployed technical reality.
 
 ---
 
-## ⚡ Architecture & Design Philosophy (Zero Corporate Filler)
+## ⚡ Productized Executive Architecture
 
-Engineered strictly as a **high-converting SaaS developer/executive landing page** rather than a traditional wall-of-text web resume:
+Treated like a high-converting SaaS product page where capabilities are the product, using bento-box grids, crisp typography, and direct links to live deployments:
 
-- **Aesthetic:** Obsidian Dark Mode (`#09090B`), subtle slate cards (`#18181B`), crisp typography (`#FAFAFA`), and high-trust accents in **Emerald** (`#10B981`) and **Electric Blue** (`#3B82F6`).
-- **Typography:** Google Fonts `Plus Jakarta Sans` (display/body) & `JetBrains Mono` (metrics/tags).
-- **Subtle Motion:** Smooth reveals and expandable height animations powered by `framer-motion`.
+- **Theme:** Obsidian Dark Mode (`#09090B`), subtle slate cards (`#18181B`), borders (`#27272A`), and high-trust accents in **Emerald** (`#10B981`) and **Electric Blue** (`#3B82F6`).
+- **Typography:** Google Fonts `Plus Jakarta Sans` & `JetBrains Mono`.
+- **Framework:** Next.js 14 App Router, Tailwind CSS, Lucide Icons, and strict TypeScript.
 
 ```
 src/
 ├── app/
-│   ├── globals.css              # Obsidian styling, glow tokens, custom scrollbars
-│   ├── layout.tsx               # Next.js Font optimization, SEO & OpenGraph tags
-│   └── page.tsx                 # SaaS landing page layout
+│   ├── globals.css              # Obsidian tokens, sleek dark scrollbars
+│   ├── layout.tsx               # Font optimization, SEO metadata
+│   └── page.tsx                 # Single-page executive SaaS landing layout
 ├── components/
 │   ├── Navbar.tsx               # Minimalist header with PDF Resume & Contact CTA
 │   ├── Hero.tsx                 # The Hook: bold typography + prominent direct CTAs
-│   ├── SecretSauceGrid.tsx      # 3-Step Pipeline Grid (Elicit → Prototype → Ship & Scale)
+│   ├── CoreCapabilities.tsx     # The 6-Point Engine (End-to-End Execution & Enterprise Delivery)
 │   ├── PrototypesShowcase.tsx   # Live Prototypes & Shipping Record with massive launch buttons
 │   ├── FastStatsBanner.tsx      # High-contrast 3-number impact banner (₹10 Cr+, 95%, 100%)
-│   ├── DigDeeperSection.tsx     # "The Traditional Resume Stuff" recruiter accordion
 │   └── SaaSFooter.tsx           # Minimalist conversion footer ("Ready to skip the generic BA interviews?")
 └── public/
     └── resume.pdf               # Downloadable traditional PDF resume
@@ -40,43 +38,41 @@ src/
 
 ---
 
-## 🛠️ The 3-Step Pipeline
+## 🏛️ Core Capabilities (The 6-Point Engine)
 
-- **01. Elicit:** Translating technical blind spots into clear business value.
-- **02. Prototype:** Building rapid AI workflows (FastAPI/Ollama) to validate customer journeys in hours, not weeks.
-- **03. Ship & Scale:** Full SDLC delivery, SLA governance, and enterprise renewals.
+**End-to-End Execution & Enterprise Delivery:**
+1. **Bridging Business & Tech:** Eliciting complex requirements, uncovering unstated stakeholder needs, and authoring critical documentation (BRDs, PRDs) to align business vision with technical reality.
+2. **Rapid AI Prototyping:** Building and shipping functional AI prototypes directly to engineering teams to validate customer journeys and accelerate development.
+3. **End-to-End SDLC & Agile Leadership:** Full-lifecycle project management—running Agile sprints, daily standups, process optimization, and strict SLA governance from kickoff to production.
+4. **Enterprise BFSI Delivery:** Spearheading customer onboarding, digital KYC, and OCR (Document AI) pipelines for industry leaders including ICICI Bank, HDFC ERGO, ICICI Prudential, ABSLI, and Reliance ADAG.
+5. **Cybersecurity Sales & Key Account Management:** Closing enterprise deals, negotiating complex SLAs, and driving consultative sales across GRC, Red Teaming, resource planning, and Managed Services.
+6. **Client Lifecycle Ownership:** Managing the complete customer journey from initial onboarding and stakeholder management through to successful enterprise contract renewals.
 
 ---
 
-## 🚀 Live Prototypes Featured
+## 🚀 Live Prototypes & Shipping Record
 
 1. **TradeBuddy / MaximusOne** — AI-powered trading execution dashboard & autonomous quant engine.
    - *Tech:* Next.js, Supabase, Vercel.
-   - *Live App:* [https://maximusone.vercel.app](https://maximusone.vercel.app)
-   - *GitHub Repo:* [https://github.com/varunbhandurge/tradebuddy](https://github.com/varunbhandurge/tradebuddy)
-2. **BA & Account Management Swarm** — Autonomous multi-agent ecosystem automating BRDs, PRDs, Jira tickets, and CRM updates.
+   - *Primary Action:* `Launch Live App ↗` ([maximusone.vercel.app](https://maximusone.vercel.app))
+   - *Secondary Action:* `GitHub ↗` ([github.com/varunbhandurge/tradebuddy](https://github.com/varunbhandurge/tradebuddy))
+2. **BA & Account Management Swarm** — Multi-agent workflow automating BRDs, Jira, and CRM.
    - *Tech:* FastAPI, local Qwen 3.6, MCP Servers.
-   - *Source Repo:* [https://github.com/varunbhandurge/ba-account-swarm](https://github.com/varunbhandurge/ba-account-swarm)
-3. **BillVault & VarunsJobBot** — Automated personal finance tracking & career automation engines.
-   - *Tech:* Next.js, FastAPI, Vercel.
-   - *Deployments:* [https://github.com/varunbhandurge/visualresume](https://github.com/varunbhandurge/visualresume)
+   - *Primary Action:* `View Source ↗` ([github.com/varunbhandurge/ba-account-swarm](https://github.com/varunbhandurge/ba-account-swarm))
+3. **Idraneel Karyalay Venue Platform** — Full-stack dynamic booking engine.
+   - *Tech:* Web App, Mobile-Ready, Dynamic Pricing.
+   - *Primary Action:* `View Source ↗` ([github.com/varunbhandurge/IdraneelKaryalay-wedding-hall](https://github.com/varunbhandurge/IdraneelKaryalay-wedding-hall))
+4. **BillVault & VarunsJobBot** — Automated finance tracking and job-hunting pipelines.
+   - *Tech:* Next.js, FastAPI, Python, Vercel.
+   - *Primary Action:* `Explore Automation Repos ↗` ([github.com/varunbhandurge](https://github.com/varunbhandurge))
 
 ---
 
-## 📊 Fast Stats
+## 📊 Enterprise Impact (Fast Stats)
 
-- **₹10 Cr+** — Revenue Driven via BFSI Delivery (9 bank rollouts across Tier-1 private bank).
+- **₹10 Cr+** — Revenue Driven via BFSI Delivery (9 enterprise rollouts across Tier-1 private bank).
 - **95%** — Automated KYC Accuracy Achieved (<0.1% false positives, <4% false negatives).
 - **100%** — SDLC Ownership: Pre-Sales to Renewals (Certified Scrum Master CSM®).
-
----
-
-## 📂 The "Traditional Resume Stuff" (Recruiter Accordion)
-
-Deep-dive methodologies kept clean on the surface and expandable on click:
-- **01. Enterprise Pedigree:** ICICI Bank, HDFC ERGO, ICICI Prudential, ABSLI, Reliance ADAG.
-- **02. Core Competencies:** Customer Onboarding, Digital KYC, OCR (Google Document AI), Cybersecurity Sales, GRC, Red Teaming.
-- **03. Project Management:** Certified Scrum Master (CSM®), sprint planning, daily standups, SLA penalty defense, and zero missed contractual milestones.
 
 ---
 
@@ -93,13 +89,13 @@ npm install
 # Start dev server
 npm run dev
 
-# Build
+# Build for production
 npm run build
 ```
 
 ---
 
-## 📬 Contact
+## 📬 Contact & Channels
 
 - **Email:** [varun.bhandurge@gmail.com](mailto:varun.bhandurge@gmail.com)
 - **GitHub:** [https://github.com/varunbhandurge](https://github.com/varunbhandurge)

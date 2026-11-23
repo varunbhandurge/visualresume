@@ -1,10 +1,9 @@
 import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { SecretSauceGrid } from '@/components/SecretSauceGrid';
+import { CoreCapabilities } from '@/components/CoreCapabilities';
 import { PrototypesShowcase } from '@/components/PrototypesShowcase';
 import { FastStatsBanner } from '@/components/FastStatsBanner';
-import { DigDeeperSection } from '@/components/DigDeeperSection';
 import { SaaSFooter } from '@/components/SaaSFooter';
 
 export default function HomePage() {
@@ -13,10 +12,9 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <SecretSauceGrid />
+        <CoreCapabilities />
         <PrototypesShowcase />
         <FastStatsBanner />
-        <DigDeeperSection />
       </main>
       <SaaSFooter />
     </div>

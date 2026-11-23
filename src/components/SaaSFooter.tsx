@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Mail, Github, Linkedin, Download, ArrowUp, ArrowUpRight } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowUp, ArrowUpRight } from 'lucide-react';
 
 export const SaaSFooter: React.FC = () => {
   const scrollToTop = () => {
@@ -16,8 +16,8 @@ export const SaaSFooter: React.FC = () => {
           Ready to skip the generic BA interviews?
         </h2>
 
-        <p className="mt-4 text-base sm:text-lg text-neutral-400 font-sans max-w-xl">
-          Let&apos;s talk about your roadmap, stakeholder bottlenecks, and shipping prototypes that get immediate executive buy-in.
+        <p className="mt-4 text-base sm:text-lg text-neutral-400 font-sans max-w-xl leading-relaxed">
+          Let&apos;s talk about your technical roadmap, stakeholder bottlenecks, and shipping prototypes that get immediate executive buy-in.
         </p>
 
         {/* Large Prominent Get in Touch Button */}
@@ -32,42 +32,33 @@ export const SaaSFooter: React.FC = () => {
           </a>
         </div>
 
-        {/* Secondary Links & Direct Profile Channels */}
+        {/* Social Links to GitHub and LinkedIn */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-neutral-400">
           <a
             href="https://github.com/varunbhandurge"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slatecard-border bg-slatecard hover:bg-slatecard-hover hover:text-white transition-all"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-slatecard-border bg-slatecard hover:bg-slatecard-hover hover:text-white transition-all"
           >
-            <Github className="w-3.5 h-3.5" />
-            <span>GitHub</span>
+            <Github className="w-4 h-4" />
+            <span>GitHub Profile</span>
           </a>
 
           <a
             href="https://linkedin.com/in/varunbhandurge"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slatecard-border bg-slatecard hover:bg-slatecard-hover hover:text-white transition-all"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-slatecard-border bg-slatecard hover:bg-slatecard-hover hover:text-white transition-all"
           >
-            <Linkedin className="w-3.5 h-3.5 text-brand-blue" />
-            <span>LinkedIn</span>
-          </a>
-
-          <a
-            href="/resume.pdf"
-            download="Varun_Bhandurge_Resume.pdf"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slatecard-border bg-slatecard hover:bg-slatecard-hover hover:text-white transition-all"
-          >
-            <Download className="w-3.5 h-3.5 text-brand-emerald" />
-            <span>Download PDF</span>
+            <Linkedin className="w-4 h-4 text-brand-blue" />
+            <span>LinkedIn Profile</span>
           </a>
         </div>
 
-        {/* Bottom Back-to-Top and Meta */}
+        {/* Meta & Back-to-Top */}
         <div className="mt-16 pt-8 border-t border-slatecard-border/60 w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-500">
           <div>
-            © {new Date().getFullYear()} Varun Bhandurge • Next.js &amp; Tailwind on Vercel
+            © {new Date().getFullYear()} Varun Bhandurge • Next.js &amp; Tailwind CSS on Vercel
           </div>
 
           <button
